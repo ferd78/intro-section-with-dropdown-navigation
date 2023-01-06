@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Github Link](https://github.com/ferd78/intro-section-with-dropdown-navigation)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
