@@ -1,71 +1,98 @@
-# Quiz Challage - Intro section page with interactive dropdown menu
+# Quiz 2 - Intro section page with interactive dropdown menu solution
 
-![Design preview for the Intro section with dropdown navigation coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Intro section page with interactive dropdown menu Quiz 2 challenge]
 
-## Welcome! 👋
+## Table of contents
 
-Welcome to Quiz 2 challenge for HCI course, this Quiz only will be opened during your class schedule.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-**To do this challenge, you need a good understanding of HTML and CSS, and basic JavaScript.**
+## Overview
 
-## The challenge
+### The challenge
 
-Your challenge is to build out this intro section with dropdown navigation and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-TARGET: Your users should be able to:
+Users should be able to:
 
 - View the relevant dropdown menus on desktop and mobile when interacting with the navigation links
 - View the optimal layout for the content depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-NOTE: 
-Just do the best that you could do in the limited of time, and let see how well you could implement HTML, CSS and Basic JS to build a solution
+### Screenshot
 
-## Where to find everything
+![](./images/quiz.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+### Links
 
-I also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+## My process
 
-## Building your project
+### Built with
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- [Styled Components](https://styled-components.com/) - For styles
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). You could just fork this repository to start the process
-2. Configure your repository to publish your code to a web address (I am sure you are familiar already with this step). 
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles, Feel free to use CSS Framework (Bootstrap, etc).
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+### What I learned
 
-## Deploying your project
+I have learned some advance techniques in JavaScript that helped me form a functional drop-down button using .addEventListener. In addition, the @media in css helped me create a responsive website.
 
-As mentioned above, please hosts your running solution here:
+```css
+@media(min-width:375px){
+    body{
+        background: var(--AlmostWhite);
+    }
+    body .default{
+        display: none;
+        opacity: 0;
+    }
+    header{
+        padding: 1.5rem 3rem;
+        justify-content: center;
+    }
+    header .logo{
+        margin-top: .5rem;;
+}
+```
+```js
+dropdown.forEach(function(item){
+    item.addEventListener('click',function(){
+        item.parentElement.classList.toggle('link-open');
+    })
+})
+```
 
-- [GitHub Pages](https://pages.github.com/)
+If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-## Create a custom `README.md`
+**Note: Delete this note and the content within this section and replace with your own learnings.**
 
-I strongly recommend overwriting this `README.md` with a custom one. I've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### Continued development
+Ever since I have known front-end development, I wanted to explore more javascript techniques that could ultimately increase the functionality of my website. In the futurem I would like to implement my javascript file with jQuery and also React JS
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+### Useful resources
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+- [W3Schools](https://www.w3schools.com/) - This website helped me create a functional hover and also drop-down button
 
-## Submitting your solution
+## Details 
 
-Submit your solution on links below depend on your class (remember each class has different due date)
+- FullName - Felix Ferdinand
+- StudentID - 2602108842
+- BINUS Email - felix.ferdinand001@binus.ac.id
 
-* Submission link for class [L1AC](https://forms.office.com/r/JR157cR8nz) (only open on 6/1/2023 from 13:30 - 17:00)
-* Submission link for class [L1BC](https://forms.office.com/r/6LGsa2siuJ) (only open on 6/1/2023 from 8:30 - 12:00)
-* Submission link for class [L1CC](https://forms.office.com/r/FL0AZjSCNi) (only open on 5/1/2023 from 9:30 - 13:00)
+## Acknowledgments
 
-**Have fun building!** 🚀
+W3Schools is a really good website for beginners to explore their coding potential. Even if there are better websites that explains the way front-end development work better.
