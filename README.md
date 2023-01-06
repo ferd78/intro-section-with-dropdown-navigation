@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Link](https://github.com/ferd78/intro-section-with-dropdown-navigation)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Server](https://ferd78.github.io/intro-section-with-dropdown-navigation/)
 
 ## My process
 
